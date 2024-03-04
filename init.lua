@@ -20,6 +20,8 @@ require("bufferline").setup{
     }
 }
 
+require("ibl").setup()
+
 require("theme")
 require("keymap")
 
