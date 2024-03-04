@@ -3,6 +3,7 @@ vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
 
 require("options")
+require("keymap")
 
 require("lazy-nvim")
 
@@ -21,7 +22,11 @@ require("bufferline").setup{
 }
 
 require("ibl").setup()
+require('Comment').setup({
+    toggler = {
+        line = '<leader>/',
+    },
+})
 
 require("theme")
-require("keymap")
 

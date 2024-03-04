@@ -50,6 +50,10 @@ require("lazy").setup({
         "lukas-reineke/indent-blankline.nvim",
         main = "ibl",
         opts = {}
+    },
+    {
+        'numToStr/Comment.nvim',
+        lazy = false,
     }
 
 })
