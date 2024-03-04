@@ -16,6 +16,7 @@ lsp_zero.on_attach(function(client, bufnr)
   lsp_zero.default_keymaps({buffer = bufnr})
 end)
 
+
 require('mason').setup({})
 require('mason-lspconfig').setup({
   ensure_installed = {'lua_ls', 'clangd'},
@@ -48,6 +49,14 @@ require('mason-lspconfig').setup({
   },
 })
 
+local cmp = require('cmp')
+
+cmp.setup({
+  mapping = cmp.mapping.preset.insert({
+    ['<CR>'] = cmp.mapping.confirm({select = true}),
+  }),
+})
+
 
 require("bufferline").setup{
     options = {
@@ -68,6 +77,7 @@ require('Comment').setup({
         line = '<leader>/',
     },
 })
+
 
 require("theme")
 
