@@ -7,6 +7,18 @@ require("options")
 require("lazy-nvim")
 
 require("nvim-tree").setup()
+require("bufferline").setup{
+    options = {
+        offsets = {
+            {
+                filetype = "NvimTree",
+                text = "File Explorer",
+                highlight = "Directory",
+                separator = true
+            }
+        }
+    }
+}
 
 require("theme")
 require("keymap")

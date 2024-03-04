@@ -40,5 +40,11 @@ require("lazy").setup({
               indent = { enable = true },  
             })
         end
-     }
+     },
+     {
+        'akinsho/bufferline.nvim',
+        version = "*",
+        dependencies = 'nvim-tree/nvim-web-devicons'
+    }
+
 })
