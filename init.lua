@@ -9,7 +9,6 @@ require("lazy-nvim")
 
 require("nvim-tree").setup()
 
-
 local lsp_zero = require('lsp-zero')
 
 lsp_zero.on_attach(function(client, bufnr)
@@ -54,6 +53,8 @@ local cmp = require('cmp')
 cmp.setup({
   mapping = cmp.mapping.preset.insert({
     ['<CR>'] = cmp.mapping.confirm({select = true}),
+    ['<S-Tab>'] = cmp.mapping.select_prev_item({behavior = 'select'}),
+    ['<Tab>'] = cmp.mapping.select_next_item({behavior = 'select'}),
   }),
 })
 
