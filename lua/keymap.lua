@@ -10,3 +10,6 @@ vim.keymap.set('n', '<leader>fh', builtin.help_tags, {})
 vim.keymap.set('n', '<leader>h', vim.lsp.buf.hover, {})
 
 vim.keymap.set('n', '<leader>tt', ':Telescope colorscheme<CR>', {})
+
+vim.keymap.set('n', '<leader>a', ':vsplit<CR>')
+vim.keymap.set('n', '<leader>w', ':bd<CR>')

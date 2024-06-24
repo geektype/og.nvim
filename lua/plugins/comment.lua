@@ -6,6 +6,9 @@ return {
             toggler = {
                 line = '<leader>/',
             },
+            opleader = {
+                line = '<leader>/'
+            }
         })
     end
 }

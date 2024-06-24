@@ -1,5 +1,6 @@
 require("lazy").setup({
     "rebelot/kanagawa.nvim",
+    {"ellisonleao/gruvbox.nvim", priority = 1000, config = true},
     "romainl/Apprentice",
     "christoomey/vim-tmux-navigator",
     {"lukas-reineke/indent-blankline.nvim", main = "ibl", opts = {}},
@@ -12,6 +13,7 @@ require("lazy").setup({
     {'hrsh7th/nvim-cmp'},
     {'L3MON4D3/LuaSnip'},
     require('plugins/dap'),
+    require('plugins/neocord'),
     require('plugins/nvimtree'),
     require('plugins/treesitter'),
     require('plugins/bufferline'),
