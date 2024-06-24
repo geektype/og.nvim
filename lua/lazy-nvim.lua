@@ -11,6 +11,7 @@ require("lazy").setup({
     {'hrsh7th/cmp-nvim-lsp'},
     {'hrsh7th/nvim-cmp'},
     {'L3MON4D3/LuaSnip'},
+    require('plugins/dap'),
     require('plugins/nvimtree'),
     require('plugins/treesitter'),
     require('plugins/bufferline'),
