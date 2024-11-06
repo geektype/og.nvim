@@ -16,3 +16,5 @@ vim.keymap.set("n", "<leader>s", ":Telescope lsp_document_symbols<CR>", {})
 
 vim.keymap.set("n", "<leader>a", ":vsplit<CR>")
 vim.keymap.set("n", "<leader>w", ":bd<CR>")
+
+vim.keymap.set("v", "<leader>y", '"+y', { noremap = true, silent = true })
