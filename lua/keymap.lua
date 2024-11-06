@@ -8,6 +8,7 @@ vim.keymap.set("n", "<leader>fb", builtin.buffers, {})
 vim.keymap.set("n", "<leader>fh", builtin.help_tags, {})
 
 vim.keymap.set("n", "<leader>h", vim.lsp.buf.hover, {})
+vim.keymap.set("n", "<leader>e", vim.diagnostic.open_float, {})
 
 vim.keymap.set("n", "<leader>tt", ":Telescope colorscheme<CR>", {})
 vim.keymap.set("n", "<leader>r", ":Telescope lsp_references<CR>", {})
