@@ -24,4 +24,5 @@ require("lazy").setup({
 	require("plugins/nvim-lint"),
 	require("plugins.lazygit"),
 	require("plugins.starter"),
+	require("plugins.avante"),
 })
