@@ -1,5 +1,5 @@
 -- Set leader to <space>
-vim.g.mapleader = ' '
+vim.g.mapleader = " "
 
 -- Hybrid Line Numbering
 vim.opt.number = true
@@ -23,4 +23,6 @@ vim.opt.expandtab = true
 vim.opt.termguicolors = true
 vim.opt.wrap = false
 
-vim.opt.completeopt = {'menu', 'menuone', 'noselect'}
+vim.opt.completeopt = { "menu", "menuone", "noselect" }
+
+vim.opt.laststatus = 3
