@@ -1,1 +1,1 @@
-vim.cmd.colorscheme("apprentice")
+vim.cmd.colorscheme("kanagawa-dragon")
