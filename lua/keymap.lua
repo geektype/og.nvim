@@ -18,3 +18,4 @@ vim.keymap.set("n", "<leader>a", ":vsplit<CR>")
 vim.keymap.set("n", "<leader>w", ":bd<CR>")
 
 vim.keymap.set("v", "<leader>y", '"+y', { noremap = true, silent = true })
+vim.keymap.set("n", "<leader>\\", ":qa<CR>", { noremap = true, silent = true })
