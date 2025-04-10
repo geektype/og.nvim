@@ -1,1 +1,2 @@
-vim.cmd.colorscheme("kanagawa-dragon")
+local config = require("config")
+vim.cmd.colorscheme(config.theme)
