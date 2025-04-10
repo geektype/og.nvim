@@ -1,4 +1,6 @@
-return {
+local utils = require("utils")
+
+return utils.filter_plugin({
 	"mfussenegger/nvim-lint",
 	event = { "BufWritePre", "BufNewFile" },
 	config = function()
@@ -19,4 +21,4 @@ return {
 			lint.try_lint()
 		end, { desc = "Trigger linting for current file" })
 	end,
-}
+})

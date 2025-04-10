@@ -1,4 +1,6 @@
-return {
+local utils = require("utils")
+
+return utils.filter_plugin({
 	"yetone/avante.nvim",
 	event = "VeryLazy",
 	lazy = false,
@@ -57,4 +59,4 @@ return {
 			ft = { "markdown", "Avante" },
 		},
 	},
-}
+})

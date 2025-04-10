@@ -1,4 +1,5 @@
-return {
+local utils = require("utils")
+return utils.filter_plugin({
 	"kdheepak/lazygit.nvim",
 	cmd = {
 		"LazyGit",
@@ -16,4 +17,4 @@ return {
 	keys = {
 		{ "<leader>g", "<cmd>LazyGit<cr>", desc = "LazyGit" },
 	},
-}
+})

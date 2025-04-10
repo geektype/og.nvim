@@ -1,4 +1,5 @@
-return {
+local utils = require("utils")
+return utils.filter_plugin({
 	"nvim-treesitter/nvim-treesitter",
 	build = ":TSUpdate",
 	config = function()
@@ -11,4 +12,4 @@ return {
 			indent = { enable = true },
 		})
 	end,
-}
+})

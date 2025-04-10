@@ -1,4 +1,5 @@
-return {
+local utils = require("utils")
+return utils.filter_plugin({
 	"stevearc/conform.nvim",
 
 	event = { "BufWritePre", "BufNewFile" },
@@ -29,4 +30,4 @@ return {
 		-- If you want the formatexpr, here is the place to set it
 		vim.o.formatexpr = "v:lua.require'conform'.formatexpr()"
 	end,
-}
+})

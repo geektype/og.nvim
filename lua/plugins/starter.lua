@@ -1,9 +1,12 @@
-return {
+local config = require("config")
+local utils = require("utils")
+
+return utils.filter_plugin({
 	"echasnovski/mini.starter",
 	config = function()
 		require("mini.starter").setup({
-			header = "Welcome back donny",
-			footer = "This is your home now, get comfortable!",
+			header = config.home.header,
+			footer = config.home.footer,
 		})
 	end,
-}
+})
