@@ -1,0 +1,13 @@
+local c = {
+    theme = "gruvbox",
+    home = {
+        header = "OG nvim",
+        footer = "Dare Mighty Things!",
+    },
+    exclude_plugins = {
+        "IogaMaster/neocord",
+        "mfussenegger/nvim-dap",
+        "yetone/avante.nvim",
+    }
+}
+return c
