@@ -1,6 +1,10 @@
 vim.keymap.set({ "n" }, "<leader>q", ":NvimTreeToggle<CR>")
 vim.keymap.set({ "n" }, "<leader>p", ":BufferLinePick<CR>")
 
+
+vim.keymap.set("x", "<leader>l", '"_dP', { desc = "Paste over without losing yank" })
+
+
 local builtin = require("telescope.builtin")
 vim.keymap.set("n", "<leader>ff", builtin.find_files, {})
 vim.keymap.set("n", "<leader>fg", builtin.live_grep, {})
